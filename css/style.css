@@ -1,0 +1,102 @@
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    font-size: 10em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    padding-right: 100px;
+}
+
+#todo-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+}
+
+#todo-list {
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+ul::-webkit-scrollbar{
+    width: 8px;
+}
+
+/*스크롤바 막대*/
+ul::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #343434;
+}
+
+ul {
+	list-style-position: outside;
+	padding-left: 1em;
+}
+li::marker {
+	content: "✔ ";
+}
+
+button{
+    border: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#quote {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+

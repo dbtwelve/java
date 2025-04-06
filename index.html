@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>
+        Momentum App
+    </title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="clock" id="clock" >00:00:00</div>
+        <form class="hidden" id="login-form">
+            <input required maxlength="15" type="text" id="login-input" placeholder="What is your name?">
+            <button id="login-form">Log In</button>
+        </form>
+        <br>
+        <form class="hidden" id="logout"><button>Log Out</button></form>
+        <h1 id="greeting" class="hidden"></h1>
+        <div class="todo">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new task">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        <div id="quote">
+            <span></span>
+            <span> - </span>
+            <span></span>
+        </div>
+        <div class="weather-info" id="weather">
+            <span>clear</span>
+            <span>seoul</span>
+        </div>
+        <script src="js/clock.js"></script>
+        <script src="js/greetings.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </div>
+</body>
+</html>
